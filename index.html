@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techs Educational Forum</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+
+    <!----google font link-->
+    
+    <!-----------swipper js----------------------------------------------------->
+
+
+
+<!-- Demo styles -->
+
+</head>
+<body>
+
+    <!-----------navbar section----------------------------------------------------->
+    <nav>
+        <div class="container nav_container">
+            <a style="margin-left: 5px; margin-top: 70px;" href="index.html"><h4>TechsEdtforum</h4></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fas fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fas fa-times"></i></button>
+    </div>
+    </nav>
+
+    <!----------end of-navbar section--------------------------------------------------->
+<!-----------header section--------------------------------------------------->
+    <header>
+      <div class="container header_container">
+        <div class="header_left">
+            <h1>Set yourself up for success with these online  courses!</h1>
+            <p>Let us take you into a deeper experience,
+            make a moment a lasting conveyable memory.
+            Let us help build your tribe.
+           .</p>
+            <a href="courses.html" class="btn btn-primary">Get started</a>
+
+        </div>
+
+        <div class="header_right">
+            <img src="data:image/jpeg;base64,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" alt="" style="width: 50%; margin-left: 100px;">
+          </div>
+        </div>
+      </div>
+    </header>
+<!----------end of-header section--------------------------------------------------->
+
+<!----------categories section--------------------------------------------------->
+
+
+
+
+<section class="categories">
+    <div class="container container_categories">
+        <div class="categories_left">
+            <h1>categories</h1>
+            <p>Learning HTML and CSS is a lot more challenging than it used to be. 
+                Responsive web design adds more layers of complexity
+               to design and develop websites
+             in these tutorials, we are going to walk you through A straightforward,
+            comprehensive and project oriented  basics of HTML, CSS and Javascript
+           </p>
+           <a href="" class="btn">Learn more</a>
+
+        </div>
+
+        <div class="categories_right">
+            <article class="category">
+            <span class="category_icon"><i class="uil uil-bitcoin-circle"></i></span>
+            <h5>Blockchain</h5>
+            <p>We don't just build websites, we build websites that SELLS</p>
+            </article>
+
+            <article class="category">
+                <span class="category_icon"><i class="fas fa-bitcoin-circle"></i></span>
+                <h5>Blockchain</h5>
+                <p>We don't just build websites, we build websites that SELLS</p>
+            </article>
+
+            <article class="category">
+                <span class="category_icon"><i class="fas fa-bitcoin-circle"></i></span>
+                <h5>Blockchain</h5>
+                <p>We don't just build websites, we build websites that SELLS</p>
+            </article>
+
+            <article class="category">
+                <span class="category_icon"><i class="fas fa-bitcoin-circle"></i></span>
+                <h5>Blockchain</h5>
+                <p>We don't just build websites, we build websites that SELLS</p>
+            </article>
+
+            <article class="category">
+                <span class="category_icon"><i class="fas fa-bitcoin-circle"></i></span>
+                <h5>Blockchain</h5>
+                <p>We don't just build websites, we build websites that SELLS</p>
+            </article>
+
+            <article class="category">
+                <span class="category_icon"><i class="fas fa-bitcoin-circle"></i></span>
+                <h5>Blockchain</h5>
+                <p>We don't just build websites, we build websites that SELLS</p>
+            </article>
+        </div>
+
+    </div>
+</section>
+    <!----------End of categories--------------------------------------------------->
+
+
+<!----------courses section--------------------------------------------------->
+
+<section class="courses">
+    <h2>our popular courses</h2>
+    <div class="container courses_container">
+     <article class="course">
+        <div class="course_image">
+            <img src="https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737__340.jpg" alt="">
+        </div>
+        <div class="course_info">
+        <h4>Responsive social media website ui design</h4>
+        <p>Your website is the center of your digital eco-system,</p>
+        <a href="course.html" class="btn btn-primary">Learn more</a>
+        </div>
+     </article>
+
+    <article class="course">
+        <div class="course_image">
+            <img src="https://cdn.pixabay.com/photo/2019/09/09/08/23/internet-4463031__340.jpg" alt="">
+        </div>
+       <div class="course_info">
+        <h4>Responsive ecommerce web design</h4>
+        <p>Your website is the center of your digital eco-system,</p>
+        <a href="course.html" class="btn btn-primary">Learn more</a>
+       </div>
+    </article>
+
+    <article class="course">
+        <div class="course_image">
+            <img src="https://media.istockphoto.com/id/1386486759/photo/online-heath-care-and-medical-doctor-consultation-for-remote-diagnosis-digital-prescription.jpg?b=1&s=170667a&w=0&k=20&c=7hOZnEJkOY_FmqdiiR13HwNnZLlapc4WeCG4V8amOuY=" alt="">
+        </div>
+        <div class="course_info">
+        <h4>Responsive admin dashboard ui design</h4>
+        <p>Your website is the center of your digital eco-system,</p>
+        <a href="course.html" class="btn btn-primary">Learn more</a>
+        </div>
+    </article>
+    </div>
+</section>
+<!----------End of courses-------------------------------------------------->
+
+<!----------frequently ask question section-------------------------------------------------->
+<section class="faqs">
+    <h2>frequently ask questions</h2>
+    <div class="container faqs_container">
+        <article class="faq ">
+            <div  class="faq_icon"><i class="fas fa-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i no the right courses for me?</h4>
+                <p style="margin-top: 0.8rem;">Regardless, all web developers should be proficient in HTML, CSS, 
+                and JavaScript, which is why most web development or
+                software engineering programs will include them so on their curriculum.
+                Essentially it can be best to start by learning
+                these three</p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div  class="faq_icon"><i class="fas fa-plus"></i></div>
+            <div class="question_answer">
+                <h4>what are your highly recommended tutorial/courses that makes the concept of javascript easier to understand?</h4>
+                <p style="margin-top: 0.8rem;">just watch a course about the basics even if you didnt 
+                understand few things, then practice by doing a project for example implimenting a dark mode toggle
+            keep trying google and youtube until you get it done your way not someone's else code. once you have done that, add some 
+        more features keep adding and wrap your first project do another one and if you did one or two project i would say jump to react 
+    you will learn alot more faster and be more efficient in javascript</p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div class="faq_icon"><i class="fas fa-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i no the right courses for me?</h4>
+                <p style="margin-top: 0.8rem;">Regardless, all web developers should be proficient in HTML, CSS,
+                    and JavaScript, which is why most web development or
+                    software engineering programs will include them so on their curriculum.
+                    Essentially it can be best to start by learning
+                    these three</p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div  class="faq_icon"><i class="fas fa-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i no the right courses for me?</h4>
+                <p style="margin-top: 0.8rem;">Regardless, all web developers should be proficient in HTML, CSS,
+                    and JavaScript, which is why most web development or
+                    software engineering programs will include them so on their curriculum.
+                    Essentially it can be best to start by learning
+                    these three</p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div  class="faq_icon"><i class="fas fa-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i no the right courses for me?</h4>
+                <p style="margin-top: 0.8rem;" >Regardless, all web developers should be proficient in HTML, CSS,
+                    and JavaScript, which is why most web development or
+                    software engineering programs will include them so on their curriculum.
+                    Essentially it can be best to start by learning
+                    these three</p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div class="faq_icon"><i class="fas fa-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i no the right courses for me?</h4>
+                <p style="margin-top: 0.8rem;">Regardless, all web developers should be proficient in HTML, CSS,
+                    and JavaScript, which is why most web development or
+                    software engineering programs will include them so on their curriculum.
+                    Essentially it can be best to start by learning
+                    these three</p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div  class="faq_icon"><i class="fas fa-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i no the right courses for me?</h4>
+                <p style="margin-top: 0.8rem;">Regardless, all web developers should be proficient in HTML, CSS,
+                    and JavaScript, which is why most web development or
+                    software engineering programs will include them so on their curriculum.
+                    Essentially it can be best to start by learning
+                    these three</p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div  class="faq_icon"><i class="fas fa-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i no the right courses for me?</h4>
+                <p style="margin-top: 0.8rem;">Regardless, all web developers should be proficient in HTML, CSS,
+                    and JavaScript, which is why most web development or
+                    software engineering programs will include them so on their curriculum.
+                    Essentially it can be best to start by learning
+                    these three</p>
+            </div>
+        </article>
+
+        <article class="faq" >
+            <div class="faq_icon"><i class="fas fa-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i no the right courses for me?</h4>
+                <p style="margin-top: 0.8rem;">Regardless, all web developers should be proficient in HTML, CSS,
+                    and JavaScript, which is why most web development or
+                    software engineering programs will include them so on their curriculum.
+                    Essentially it can be best to start by learning
+                    these three</p>
+            </div>
+        </article>
+
+        <article class="faq">
+            <div  class="faq_icon"><i class="fas fa-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i no the right courses for me?</h4>
+                <p style="margin-top: 0.8rem;">Regardless, all web developers should be proficient in HTML, CSS,
+                    and JavaScript, which is why most web development or
+                    software engineering programs will include them so on their curriculum.
+                    Essentially it can be best to start by learning
+                    these three</p>
+            </div>
+        </article>
+    </div>
+</section>
+<!----------End of frequently ask question-------------------------------------------------->
+
+
+
+
+<!----------testmonial section-------------------------------------------------->
+
+<section class="container testmonials_container mySwiper">
+    <h2>Students Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Ikechukwu</h5>
+                    <small>Student</small>
+                </div>
+
+                <div class="testimonial_body">
+                    <p>I am totally grateful to God and to you for great work you have put in place to ensure others benefit from your wealth
+                    of experience. I must confess your channel remain the best place to learn web development. I followed your video from
+                    beginning to the end and I was able to get same results with you. Thanks and I really appreciate
+                   
+                   </p>
+                </div>
+
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWHWSkm0UXzNKWuNduaa9uVj26mB-58WMYQ&usqp=CAU"
+                        alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Ikechukwu</h5>
+                    <small>web developer</small>
+                </div>
+            
+                <div class="testimonial_body">
+                    <p>Coming back from an abrupt 3 month halt, this is exactly what I needed to refresh my memory. A
+                        straightforward,
+                        comprehensive and project oriented recap of the basics of HTML, CSS and Javascript. This is also a testament
+                        to how
+                        </p>
+                </div>
+            
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWHWSkm0UXzNKWuNduaa9uVj26mB-58WMYQ&usqp=CAU"
+                        alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Ikechukwu</h5>
+                    <small>Student</small>
+                </div>
+            
+                <div class="testimonial_body">
+                    <p>Coming back from an abrupt 3 month halt, this is exactly what I needed to refresh my memory. A
+                        straightforward,
+                        comprehensive and project oriented recap of the basics of HTML, CSS and Javascript. This is also a testament
+                        to how
+                        coding must be preceded by careful consideration and thorough planning so that you don't end up wrestling
+                        with your own
+                        code down the line</p>
+                </div>
+            
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWHWSkm0UXzNKWuNduaa9uVj26mB-58WMYQ&usqp=CAU"
+                        alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Ikechukwu</h5>
+                    <small>Student</small>
+                </div>
+            
+                <div class="testimonial_body">
+                    <p>Coming back from an abrupt 3 month halt, this is exactly what I needed to refresh my memory. A
+                        straightforward,
+                        comprehensive and project oriented recap of the basics of HTML, CSS and Javascript. This is also a testament
+                        to how
+                        coding must be preceded by careful consideration and thorough planning so that you don't end up wrestling
+                        with your own
+                        code down the line</p>
+                </div>
+            
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWHWSkm0UXzNKWuNduaa9uVj26mB-58WMYQ&usqp=CAU"
+                        alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Ikechukwu</h5>
+                    <small>Student</small>
+                </div>
+            
+                <div class="testimonial_body">
+                    <p>Coming back from an abrupt 3 month halt, this is exactly what I needed to refresh my memory. A
+                        straightforward,
+                        comprehensive and project oriented recap of the basics of HTML, CSS and Javascript. This is also a testament
+                        to how
+                        coding must be preceded by careful consideration and thorough planning so that you don't end up wrestling
+                        with your own
+                        code down the line</p>
+                </div>
+            
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWHWSkm0UXzNKWuNduaa9uVj26mB-58WMYQ&usqp=CAU"
+                        alt="">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Ikechukwu</h5>
+                    <small>Student</small>
+                </div>
+            
+                <div class="testimonial_body">
+                    <p>Coming back from an abrupt 3 month halt, this is exactly what I needed to refresh my memory. A
+                        straightforward,
+                        comprehensive and project oriented recap of the basics of HTML, CSS and Javascript. This is also a testament
+                        to how
+                        coding must be preceded by careful consideration and thorough planning so that you don't end up wrestling
+                        with your own
+                        code down the line</p>
+                </div>
+
+                </article>
+                
+            </div>
+
+            
+            </section>
+
+
+<!----------end of testimonials-------------------------------------------------->
+
+
+
+
+
+
+
+<!----------footer section section-------------------------------------------------->
+
+            
+              
+            
+    
+
+       <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo"><h4>TecksEdtForum</h4></a>
+                <p></p>
+            </div>
+
+        <div class="footer_2">
+            <h4>permalinks</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer_3">
+            <h4>privacy</h4>
+            <ul class="privacy">
+                <li><a href="index.html">privacy policy</a></li>
+        
+                <li><a href="about.html">terms and conditions</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        
+        </div>
+
+        <div class="footer_4">
+            <h4>Contact Us</h4>
+            <Span>+2349037186822</Span>
+            <p>mrteks2022@gmail.com</p>
+            <ul class="footer_socials">
+               
+            <a href="index.html"><i class="fab fa-facebook-f"></i></a>
+            <a href="index.html"><i class="fab fa-twitter"></i></a>
+            <a href="index.html"><i class="fab fa-instagram"></i></a>
+            <a href="index.html"><i class="fab fa-youtube"></i></a>
+        </ul> 
+        </div>
+        </div>
+        
+        
+
+        
+
+        <div class="footer_copyright">
+           <small>copyright: TecksEdtForum</small>
+        </div>
+       </footer>
+
+        
+       
+        
+
+
+
+
+
+
+
+
+    <!----------change navbar style onscroll--with javascript------------------------------------------------->
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('nav').classList.toggle
+            ('window-scroll', window.scrollY > 0)
+        })
+    </script>
+
+    <!----------Show/hide faq answer-------->
+
+    
+
+    <script>
+        const faqs = document.querySelectorAll('.faq');
+
+        faqs.forEach(faq => {
+            faq.addEventListener('click', () => {
+                faq.classList.toggle('open');
+
+                //Show/hide faq answer
+                const icon = faq.querySelector('.faq_icon i');
+                if(icon.className === 'fas fa-plus') {
+                    icon.className = 'fas fa-minus'
+                } else {
+                     icon.className = 'fas fa-plus'
+                }
+            })
+        })
+            
+       
+    </script>
+
+        
+
+
+
+<!----------Show/hide nav meu-------->
+<script>
+const menu = document.querySelector(".nav-menu");
+const menuBtn = document.querySelector("#open-menu-btn");
+const closeBtn = document.querySelector("#close-menu-btn");
+
+menuBtn.addEventListener('click', ()  => {
+    menu.style.display = "flex";
+    closeBtn.style.display = "inline-block";
+    menuBtn.style.display = "none"
+})
+
+  //--close nav menu
+
+  const closeNav = () => {
+    menu.style.display = "none";
+    closeBtn.style.display = "none";
+    menuBtn.style.display = "inline-block"
+  }
+
+  closeBtn.addEventListener('click', closeNav)
+
+  
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+   
